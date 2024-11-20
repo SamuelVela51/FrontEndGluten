@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="productos.css">
+    <link rel="icon" type="image/png" href="imagenes/LOGO_FREE_GLUTEN_VERTICAL.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Free Gluten</title>
+</head>
+
+<body class="cuerpo">
+
+    <nav class="barradenavegacion">
+        <div class="marca">
+            <img class="logonav" src="iconos/LOGO_FREE_GLUTEN_HORIZONTAL.png" alt="Logo Marca">
+        </div>
+        <div class="subpaginas">
+            <a class="links" href="index.html">Inicio</a>
+            <a class="links" href="productos.html"><span class="negrilla">Productos</span></a>
+            <a class="links" href="sobrenosotros.html">Conócenos</a>
+        </div>
+        <div class="buycar">
+            <a href="carritodecompras.html"><img class="logobuycar" src="iconos/Carrito_Compras.png"
+                    alt="Logo Carro de Compras"></a>
+        </div>
+    </nav>
+
+
+
+    <section class="busca">
+        <article class="buscador">
+            <input class="buscar" type="text" placeholder="busca un producto">
+            <button class="botonbuscar" type="submit">buscar</button>
+        </article>
+    </section>
+
+
+    <main>
+        <section>
+            <div>
+                <h2 class="titulo">Encuentra el producto que siempre buscaste</h2>
+            </div>
+            <div class="productos"></div>
+        </section>
+    </main>
+
+
+
+<section>
+    <div class="comentarios">
+        <h2>Deja tu comentario</h2>
+        <form id="formulario-comentario">
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <textarea id="comentario" placeholder="Escribe tu comentario" required></textarea>
+            <label for="calificacion">Calificación:</label>
+            <div id="calificacion">
+                <span class="estrella" data-valor="1">★</span>
+                <span class="estrella" data-valor="2">★</span>
+                <span class="estrella" data-valor="3">★</span>
+                <span class="estrella" data-valor="4">★</span>
+                <span class="estrella" data-valor="5">★</span>
+            </div>
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+        <h3>Comentarios:</h3>
+        <div id="lista-comentarios"></div>
+    </div>
+</section>
+
+
+
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/573116288483" target="_blank" class="whatsapp-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="piedepagina">
+        <div>
+            <img class="logo" src="iconos/LOGO_FREE_GLUTEN_VERTICAL.png" alt="Logo Marca">
+        </div>
+        <div>
+            <p class="parrafo_footer">
+                Descubre una plataforma de opciones saludables y deliciosas diseñadas especialmente para ti.
+            </p>
+        </div>
+        <div class="pqrs">
+            <a target="_blank" href="https://forms.gle/W9XYMoHXpPSgGH1m8">PQRS</a>
+        </div>
+        <div>
+            <a target="_blank" href="https://www.instagram.com/freegluten.co/"><img class="imginsta"
+                    src="iconos/logo_instagram.png" alt="Logo Instagram"></a>
+        </div>
+    
+    </footer>
+    <script src="carritodecompras.js"></script>
+    <script src="main.js"></script>
+    <script src="alertas.js"></script>
+</body>
+
+</html>

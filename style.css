@@ -1,0 +1,473 @@
+body {
+    font-family: sans-serif;
+    background-color: #f5ebd4 !important;
+}
+.barradenavegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    z-index: 10;
+    background-color: #f5ebd4;
+    border-bottom: 1px solid #a05c1c;
+}
+.links{
+    text-decoration: none;
+    color: #935115;
+    justify-content: space-between;
+}
+.links:hover{
+    color: #a05c1c;
+    font-weight: bold;
+}
+.negrilla{
+    font-weight: bold;
+}
+.logobuycar{
+    height: 35px;
+    width: 40px;
+}
+.marca{
+    display: flex;
+    align-items: center;
+}
+.logonav{
+    height: 75px;
+    width: 100px;
+    object-fit:contain;
+    object-position: center;
+}
+.subpaginas{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.primeraseccion{
+    height: 75%;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.imagenprincipal{
+    height: 375px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.segundaseccion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.subtitulouno{
+    width: 400px;
+    color: #5B3309;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+.imgsegsec{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.subpromo{
+    color: orangered;
+    text-align: center;
+}
+.submarca{
+    color: #E8FF85;
+}
+.textmarca{
+    color: white;
+}
+.promo{
+    background-color: #f4e9cf;
+    width: 950px;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 50px;
+    display: grid;
+    grid-template-areas:
+    "parteuno partedos"
+    ;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #73410c;
+}
+.servicio{
+    margin-top: 23px;
+    height: 225px;
+    width: 225px;
+}
+.subtitulo3{
+    color: #73410c;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.p4{
+    font-size: 18px;
+}
+.vermas{
+    font-size: 18px;
+    background-color: #73410c;
+    color: white;
+    padding: 10px 43px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.vermas:hover{
+    color: white;
+    background-color: #ac6111;
+}
+.tercerasecccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+.subtitulodos{
+    text-align: center;
+    color: #5B3309;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+}
+.carrusel{
+    margin: auto;
+    max-height: 50%;
+    max-width: 50%;
+}
+.carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+    padding: 25px;
+}
+.piedepagina{
+    background-color: #FFFAEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+.parrafo_footer{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+}
+.imginsta{
+    height: 45px;
+    width: 45px;
+}
+@media (max-width:750px){
+    .subpaginas{
+        width: 300px;
+    }
+}
+@media (max-width:550px){
+    .barradenavegacion{
+        gap: 10px;
+    }
+    .subpaginas{
+        width: 250px;
+        gap: 20px;
+    }
+    .logonav{
+        height: 50px;
+        width: 75px;
+    }
+    .logobuycar{
+        height: 25px;
+        width: 30px;
+    }
+}
+
+
+@media (max-width:750px) {
+    .piedepagina{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parrafo_footer{
+        width: 350px;
+    }
+}
+@media (max-width:515px) {
+    .parrafo_footer{
+        width: 250px;
+    }
+}
+
+
+
+/* url pqrs */
+.piedepagina .pqrs a {
+    text-decoration: none;
+    color: #5B3309;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.piedepagina .pqrs a:hover {
+    color: #ac6111;
+}
+
+
+
+
+
+
+
+
+
+/* Estilo del botón de WhatsApp flotante */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    /* Verde de WhatsApp */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-btn img {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* En dispositivos pequeños */
+@media (max-width: 600px) {
+    .whatsapp-btn {
+        padding: 10px;
+    }
+
+    .whatsapp-btn img {
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+/* Estilo global para la sección de productos */
+.terceraseccion {
+    padding: 2rem;
+    text-align: center;
+    display: block;
+    /* Usamos block para no interferir con flex en contenedor-productos */
+}
+
+.subtitulodos {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Contenedor de los productos */
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten a nuevas filas */
+    justify-content: center;
+    /* Centra las tarjetas en el eje horizontal */
+    align-items: center;
+    /* Centra las tarjetas en el eje vertical */
+    gap: 1.5rem;
+    /* Espacio entre las tarjetas */
+    margin-top: 2rem;
+}
+
+/* Estilo para las tarjetas de productos */
+.producto {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.producto:hover {
+  transform: translateY(-5px); /* Efecto de hover para elevar la tarjeta */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del producto */
+.imagenproducto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Contenedor de texto y descripción */
+.producto-container {
+  padding: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+.nombreproducto {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.descripcionproducto {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.texto-corto {
+  display: inline;
+}
+
+.texto-completo {
+  display: none;
+  color: #444;
+}
+
+.leer-mas {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.leer-menos {
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* Precio del producto */
+.precioproducto {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+/* Botón de agregar al carrito */
+.agregar-carrito {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.agregar-carrito:hover {
+  background-color: #218838;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .producto-container {
+    padding: 1rem;
+  }
+
+  .nombreproducto {
+    font-size: 1.2rem;
+  }
+
+  .descripcionproducto {
+    font-size: 0.9rem;
+  }
+
+  .precioproducto {
+    font-size: 1rem;
+  }
+
+  .agregar-carrito {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  .subtitulodos {
+    font-size: 1.5rem;
+  }
+
+  .producto {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .producto-container {
+    padding: 0.5rem;
+  }
+
+  .imagenproducto {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .nombreproducto {
+    font-size: 1rem;
+  }
+
+  .descripcionproducto {
+    font-size: 0.8rem;
+  }
+
+  .precioproducto {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+.oculto {
+    display: none;
+}
+
+.leer-mas,
+.leer-menos {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.leer-mas:hover,
+.leer-menos:hover {
+    color: #0056b3;
+}
